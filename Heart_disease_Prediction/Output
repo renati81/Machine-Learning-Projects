@@ -1,0 +1,110 @@
+Data columns (total 14 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   age       297 non-null    int64  
+ 1   sex       297 non-null    int64  
+ 2   cp        297 non-null    int64  
+ 3   trestbps  297 non-null    int64  
+ 4   chol      297 non-null    int64  
+ 5   fbs       297 non-null    int64  
+ 6   restecg   297 non-null    int64  
+ 7   thalach   297 non-null    int64  
+ 8   exang     297 non-null    int64  
+ 9   oldpeak   297 non-null    float64
+ 10  slope     297 non-null    int64  
+ 11  ca        297 non-null    int64  
+ 12  thal      297 non-null    int64  
+ 13  target    297 non-null    int64  
+dtypes: float64(1), int64(13)
+memory usage: 32.6 KB
+None
+Dataset Shape: (297, 14)
+
+Data Preprocessing & Cleaning Completed. Cleaned Data Saved.
+
+Performing Exploratory Data Analysis
+
+Dataset Sizes:
+- Train: (172, 13)
+- Validation: (58, 13)
+- Test: (58, 13)
+
+Logistic Regression Accuracy: 0.8621
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.88      0.88      0.88        32
+           1       0.85      0.85      0.85        26
+
+    accuracy                           0.86        58
+   macro avg       0.86      0.86      0.86        58
+weighted avg       0.86      0.86      0.86        58
+
+Confusion Matrix:
+ [[28  4]
+ [ 4 22]]
+============================================================
+
+SVM Accuracy: 0.8621
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.85      0.91      0.88        32
+           1       0.88      0.81      0.84        26
+
+    accuracy                           0.86        58
+   macro avg       0.86      0.86      0.86        58
+weighted avg       0.86      0.86      0.86        58
+
+Confusion Matrix:
+ [[29  3]
+ [ 5 21]]
+============================================================
+
+Decision Tree Accuracy: 0.7586
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.72      0.91      0.81        32
+           1       0.83      0.58      0.68        26
+
+    accuracy                           0.76        58
+   macro avg       0.78      0.74      0.74        58
+weighted avg       0.77      0.76      0.75        58
+
+Confusion Matrix:
+ [[29  3]
+ [11 15]]
+============================================================
+
+Random Forest Accuracy: 0.8793
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.86      0.94      0.90        32
+           1       0.91      0.81      0.86        26
+
+    accuracy                           0.88        58
+   macro avg       0.89      0.87      0.88        58
+weighted avg       0.88      0.88      0.88        58
+
+Confusion Matrix:
+ [[30  2]
+ [ 5 21]]
+============================================================
+
+XGBoost Accuracy: 0.8103
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.78      0.91      0.84        32
+           1       0.86      0.69      0.77        26
+
+    accuracy                           0.81        58
+   macro avg       0.82      0.80      0.80        58
+weighted avg       0.82      0.81      0.81        58
+
+Confusion Matrix:
+ [[29  3]
+ [ 8 18]]
+============================================================
