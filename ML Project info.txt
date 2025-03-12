@@ -1,0 +1,15 @@
+ML - Semantic Search in-class projects
+__________________________________________________________________________________________________
+
+In folder assigment1 -> ven, app.py i used, this will do a semantic search app for movie recommendation.
+
+Steps to run:
+
+open cmd -> 
+cd "C:\Users\HP\OneDrive\Desktop\UTA Docs\Spring 2025\CSE 6363 - Machine Learning\Assignments\Sematic_Search"
+venv\Scripts\activate 
+python streamlit run app.py
+
+
+It will redirect the python cmd prompt to local host "http://localhost:8501/", we can give the query ex: drama, comedy and hit enter
+It will give the related movies
